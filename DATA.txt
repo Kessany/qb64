@@ -1,0 +1,29 @@
+CLS
+
+Dim salespersons AS String
+Dim salestarget AS Int
+Dim actualsale AS Int
+
+INPUT "salesperson's Name:"; salespersons
+INPUT "Sales Target(GH¢):"; salestarget
+INPUT "Actual Sales (GH¢):"; actualsale
+
+SELECT CASE salestarget
+   CASE 200
+      PRINT "Excellent"
+      PRINT "Your reward is GH¢ 1,000"
+      
+   CASE 150 TO 199
+      PRINT "Good"
+      PRINT "Your reward is GH¢ 500"
+      
+   CASE 100 TO 149
+      PRINT "Satisfactory"
+      PRINT "Your reward is GH¢ 100"
+      
+   CASE 0 TO 99
+      PRINT "Unsatisfactory"
+      PRINT "You are fired from this company"      
+END SELECT
+PRINT "Hello"; salespersons
+PRINT "Your Actual Sales is:",
